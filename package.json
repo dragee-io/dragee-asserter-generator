@@ -1,0 +1,19 @@
+{
+  "name": "@dragee-io/asserter-generator",
+  "module": "index.ts",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "exec": "bun run index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.5.0"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "@dragee-io/asserter-type": "https://github.com/MichaelBernasinski/dragee-asserter-model#8a75477"
+  }
+}
