@@ -1,3 +1,3 @@
-import {TemplateAsserter} from "./src/template-asserter.model.ts";
+import { TemplateAsserter } from './src/template-asserter.model.ts';
 
 export default new TemplateAsserter();
