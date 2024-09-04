@@ -1,4 +1,4 @@
-import { type Dragee, type RuleResult } from '@dragee-io/asserter-type';
+import type { Dragee, RuleResult } from '@dragee-io/asserter-type';
 import { TemplateRule } from '../template-rule.model.ts';
 
 export default new TemplateRule('Sample rule', (dragees: Dragee[]): RuleResult[] =>

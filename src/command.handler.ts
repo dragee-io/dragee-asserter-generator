@@ -1,4 +1,4 @@
-import { cpSync, renameSync, readFileSync, writeFileSync, readdirSync } from 'node:fs';
+import { cpSync, readFileSync, readdirSync, renameSync, writeFileSync } from 'node:fs';
 
 const templateDir = 'template/';
 const charEncoding = 'utf-8';
@@ -16,9 +16,10 @@ export const handler = async (argument: string, options: Options) => {
     cpSync(templateDir, outputDir, { recursive: true });
 
     // Rename and replace all "template" placeholders by asserter name
-    readdirSync(outputDir, { recursive: true, withFileTypes: true }).forEach(file => {
-        if (!file.isDirectory()) replaceTemplate(`${file.parentPath}/${file.name}`, name);
-    });
+    const files = readdirSync(outputDir, { recursive: true, withFileTypes: true }).filter(
+        file => !file.isDirectory()
+    );
+    for (const file of files) replaceTemplate(`${file.parentPath}/${file.name}`, name);
 };
 
 const replaceTemplate = (filePath: string, name: string) => {
