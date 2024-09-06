@@ -18,11 +18,11 @@ describe('Sample Asserter', () => {
         };
         const report: Report = asserter([{
             name: 'dragee1',
-            kind_of: 'template/test',
+            profile: 'template/test',
             depends_on: []
         },{
             name: 'dragee2',
-            kind_of: 'template/test',
+            profile: 'template/test',
             depends_on: [dependancy]
         }]);
 
