@@ -4,7 +4,6 @@
 	"type": "module",
 	"version": "0.0.1",
 	"scripts": {
-		"exec": "bun run index.ts",
 		"format": "biome format --write",
 		"lint": "biome lint --write",
 		"check": "biome check --write"
