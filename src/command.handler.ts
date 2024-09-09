@@ -1,6 +1,6 @@
 import { cpSync, readFileSync, readdirSync, renameSync, writeFileSync } from 'node:fs';
 
-const templateDir = 'template/';
+const templateDir = `${import.meta.dir}/../template/`;
 const charEncoding = 'utf-8';
 
 type Options = {
