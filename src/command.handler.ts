@@ -8,7 +8,7 @@ type Options = {
     outputDir: string;
 };
 
-export const handler = async (argument: string, options: Options) => {
+export const generatorHandler = async (options: Options) => {
     const outputDir = `${options.outputDir}/${options.name}-asserter`;
     const name = options.name.toLowerCase();
 

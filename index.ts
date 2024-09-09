@@ -1,14 +1,15 @@
 import { Command } from 'commander';
-import { handler } from './src/command.handler.ts';
+import { generatorHandler } from './src/command.handler.ts';
 
-export const program = new Command();
+const program = new Command();
 
-program
-    .version('0.0.1')
-    .description('A CLI for generating a dragee asserter')
-    .argument('generate', 'generate new asserter project')
+export const generateAsserter = new Command('generate-asserter')
     .requiredOption('-n, --name <string>', 'name of the asserter project')
     .requiredOption('-od, --output-dir <string>', 'output dir for the asserter project')
-    .action(handler);
+    .action(generatorHandler);
 
-program.showHelpAfterError().showSuggestionAfterError().parse(process.argv);
+program
+    .addCommand(generateAsserter)
+    .showHelpAfterError()
+    .showSuggestionAfterError()
+    .parse(process.argv);
