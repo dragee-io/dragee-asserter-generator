@@ -5,7 +5,10 @@ export default new TemplateRule(
     'Sample rule',
     RuleSeverity.ERROR,
     (dragees: Dragee[]): RuleResult[] =>
-        dragees.map(() => {
-            return { pass: false, message: 'To be implemented' };
+        dragees.map(dragee => {
+            return {
+                pass: false,
+                error: { drageeName: dragee.name, message: 'To be implemented' }
+            };
         })
 );

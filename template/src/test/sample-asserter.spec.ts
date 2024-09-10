@@ -27,7 +27,15 @@ describe('Sample Asserter', () => {
         }]);
 
         expect(report.pass).toBeFalse();
-        expect(report.errors).toEqual(['To be implemented', 'To be implemented']);
+        expect(report.errors).toEqual([            
+            {
+                drageeName: 'dragee1',
+                message: 'To be implemented'
+            },{
+                drageeName: 'dragee2',
+                message: 'To be implemented'
+            }]
+        );
         expect(report.namespace).toBe('template');
     });
 })
