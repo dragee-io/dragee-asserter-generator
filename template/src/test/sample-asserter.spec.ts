@@ -30,10 +30,12 @@ describe('Sample Asserter', () => {
         expect(report.errors).toEqual([            
             {
                 drageeName: 'dragee1',
-                message: 'To be implemented'
+                message: 'To be implemented',
+                ruleId: "template/sample-rule"
             },{
                 drageeName: 'dragee2',
-                message: 'To be implemented'
+                message: 'To be implemented',
+                ruleId: "template/sample-rule"
             }]
         );
         expect(report.namespace).toBe('template');
