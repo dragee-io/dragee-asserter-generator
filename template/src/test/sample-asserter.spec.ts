@@ -1,13 +1,10 @@
 import {describe, expect, test} from "bun:test";
-import { type Report, type Dependency, DependencyType } from "@dragee-io/asserter-type";
-import TemplateDddAsserter from "../..";
-
-const asserter = TemplateDddAsserter.handler
+import { type Report, type Dependency, DependencyType, asserterHandler } from "@dragee-io/asserter-type";
+import templateAsserter from "../..";
 
 describe('Sample Asserter', () => {
     test('assert with no dragees', () => {
-        const report: Report = asserter([]);
-
+        const report: Report = asserterHandler(templateAsserter, []);
         expect(report.pass).toBeTrue();
         expect(report.namespace).toBe('template');
     });
@@ -16,7 +13,7 @@ describe('Sample Asserter', () => {
         const dependancy: Dependency = {
             'dragee1': DependencyType.FIELD
         };
-        const report: Report = asserter([{
+        const report: Report = asserterHandler(templateAsserter, [{
             name: 'dragee1',
             profile: 'template/test',
             depends_on: []

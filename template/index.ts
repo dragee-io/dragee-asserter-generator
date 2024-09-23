@@ -1,3 +1,6 @@
-import { TemplateAsserter } from './src/template-asserter.model.ts';
+import { findRules } from '@dragee-io/asserter-type';
 
-export default new TemplateAsserter();
+export default {
+    namespace: 'template',
+    rules: findRules('template', `${import.meta.dir}/src/rules/`)
+};
