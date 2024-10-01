@@ -27,7 +27,8 @@
  * @module Sample Rule
  *
  */
-import { type Dragee, type RuleResult, RuleSeverity } from '@dragee-io/asserter-type';
+import { type RuleResult, RuleSeverity } from '@dragee-io/type/asserter';
+import type { Dragee } from '@dragee-io/type/common';
 
 export default {
     label: 'Sample rule',

@@ -17,6 +17,6 @@
 	},
 	"dependencies": {
 		"commander": "^12.1.0",
-		"@dragee-io/asserter-type": "https://github.com/MichaelBernasinski/dragee-asserter-model"
+		"@dragee-io/type": "https://github.com/MichaelBernasinski/dragee-model"
 	}
 }

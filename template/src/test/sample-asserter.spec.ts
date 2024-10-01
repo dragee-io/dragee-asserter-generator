@@ -1,5 +1,6 @@
 import {describe, expect, test} from "bun:test";
-import { type Report, type Dependency, DependencyType, asserterHandler } from "@dragee-io/asserter-type";
+import { type Dependency, DependencyType } from "@dragee-io/type/common";
+import { type Report, asserterHandler } from "@dragee-io/type/asserter";
 import templateAsserter from "../..";
 
 describe('Sample Asserter', () => {
