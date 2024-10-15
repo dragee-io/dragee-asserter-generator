@@ -17,6 +17,6 @@
     },
     "dependencies": {
         "commander": "^12.1.0",
-        "@dragee-io/type": "https://github.com/MichaelBernasinski/dragee-model"
+        "@dragee-io/type": "https://github.com/dragee-io/dragee-model"
     }
 }

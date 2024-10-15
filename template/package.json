@@ -11,6 +11,6 @@
         "typedoc": "^0.26.7"
     },
     "dependencies": {
-        "@dragee-io/type": "https://github.com/MichaelBernasinski/dragee-model"
+        "@dragee-io/type": "https://github.com/dragee-io/dragee-model"
     }
 }
