@@ -1,16 +1,16 @@
 {
-	"name": "@dragee-io/template-asserter",
-	"module": "index.ts",
-	"type": "module",
-	"version": "0.0.1",
-	"devDependencies": {
-		"@types/bun": "latest"
-	},
-	"peerDependencies": {
-		"typescript": "^5.5.0",
-    	"typedoc": "^0.26.7"
-	},
-	"dependencies": {
-		"@dragee-io/type": "https://github.com/MichaelBernasinski/dragee-model"
-	}
+    "name": "@dragee-io/template-asserter",
+    "module": "index.ts",
+    "type": "module",
+    "version": "0.0.1",
+    "devDependencies": {
+        "@types/bun": "latest"
+    },
+    "peerDependencies": {
+        "typescript": "^5.5.0",
+        "typedoc": "^0.26.7"
+    },
+    "dependencies": {
+        "@dragee-io/type": "https://github.com/MichaelBernasinski/dragee-model"
+    }
 }
